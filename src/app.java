@@ -1,9 +1,11 @@
 import vehicles.Bicycle;
 
+import java.util.HashMap;
+
 /**
  * Main process controller for app based on Java Tutorial
  */
-public class app {
+public class App {
   /**
    * Main function
    */
@@ -13,7 +15,9 @@ public class app {
 
     // Do stuff with an imported class
     Bicycle myBicycle = new Bicycle(2, 10);
+    myBicycle.printState();
 
-    myBicycle.showState();
+    HashMap myState = myBicycle.returnState();
+    System.out.println(myState);
   }
 }

@@ -1,5 +1,7 @@
 package vehicles;
 
+import java.util.HashMap;
+
 /**
  * Peddle-powered transportation machine
  */
@@ -23,10 +25,15 @@ public class Bicycle {
   }
 
   // Getters
-  // TODO: write something to return arraylist of state strings, or something
+  public HashMap returnState() {
+    HashMap myState = new HashMap();
+    myState.put("Gear", gear);
+    myState.put("Speed", speed);
+    return myState;
+  }
 
   // Print stuff
-  public void showState() {
+  public void printState() {
     System.out.println("Gear: " + gear);
     System.out.println("Speed: " + speed);
   }
