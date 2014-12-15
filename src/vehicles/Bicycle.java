@@ -6,7 +6,10 @@ import java.util.HashMap;
  * Peddle-powered transportation machine
  */
 public class Bicycle {
-  // Fields
+  // Class variables (static fields)
+  private static final int NUM_GEARS = 10;
+
+  // Instance variables (non-static fields)
   private int gear;
   private int speed;
 
@@ -36,5 +39,6 @@ public class Bicycle {
   public void printState() {
     System.out.println("Gear: " + gear);
     System.out.println("Speed: " + speed);
+    System.out.println("All bicycle instances have this many gears: " + NUM_GEARS);
   }
 }
